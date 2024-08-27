@@ -26,11 +26,11 @@ def test_guess_out_of_range():
     with pytest.raises(ValueError) as ex:
         actual: str = cg.check_guess(50, "144");
 
-        assert str(ex.value) == "range of out number";
+        assert str(ex.value) == "number out of range";
 
 
 def test_guess_negative():
     with pytest.raises(ValueError) as ex:
         actual: str = cg.check_guess(50, "-10");
 
-        assert str(ex.value) == "range of out number";
+        assert str(ex.value) == "number out of range";
